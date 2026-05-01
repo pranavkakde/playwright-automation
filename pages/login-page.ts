@@ -1,4 +1,3 @@
-// login-page.ts
 import { expect, Locator, Page } from '@playwright/test';
 
 export class SauceDemoLogin {
@@ -13,7 +12,7 @@ export class SauceDemoLogin {
     this.username = page.locator('#user-name');
     this.password = page.locator('#password');
     this.loginButton = page.locator('#login-button');
-    this.logoImage = page.locator('#root > div > div.login_wrapper > div.login_wrapper-inner > div.bot_column');
+    this.logoImage = page.locator('.login_logo');
   }
 
   async goto() {
